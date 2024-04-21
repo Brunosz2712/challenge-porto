@@ -132,9 +132,24 @@ input{
     text-align: center;
 }
 
-.rodape-c{
+#f-criar-conta{
+    align-items: center;
+    justify-content: center;
     display: flex;
-    border-top: 70px solid #000;
-    width: 100%;
-    left: 10px;    
-}
+    margin-top: 111px;
+    height: 80px;
+    background-color: #000;
+ }
+
+ #f-criar-login{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 220px;
+    height: 80px;
+    background-color: #000;
+ }
+
+ #porto-f{
+    margin-top: 0px;    
+ }

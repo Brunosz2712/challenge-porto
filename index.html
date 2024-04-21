@@ -4,55 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header id="cabecalho">
         <img src="./img-porto/porto-cabecalho.png" alt="Porto Seguro">
-        <div class="butao">
-            <a href="./criar-conta.html"><button>Criar Conta</a></button>
-            <a href=".//login.html"><button>Login</a></button>    
-        </div>
-        <hr>
     </header>
-    <div class="container">
-        <img src="./img-porto/concerto-1.jpg" alt="imagem 1" width="257" height="156">
-        <img src="./img-porto/concerto-2.jpeg" alt="imagem 2" width="257" height="156">
-        <img src="./img-porto/avaliacao.jpeg" alt="Imagem 3" width="257" height="156">
-    </div>
+    <a id="btn-login" href="./login.html">Login</a>
+    <a id="btn-criar-conta" href="./criar-conta.html">Criar Conta</a>
     <main>
-        <h2 style="color: #00a1fc;">Porto seguro</h2>
-        <p>Somos uma equipe que se preocupa com a sua  proteção e a proteção de seus bens e sua vida.
+        <section class="porto-seguro">
+            <h2>Porto seguro</h2>
+        <p class="porto">Somos uma equipe que se preocupa com a sua  proteção e a proteção de seus bens e sua vida.
             Garantindo que os  segurados se sintam verdadeiramente seguros. 
             Seu orgulho está  em proporcionar tranquilidade, eliminando a sensação de insegurança!
             Garantindo apoio constante em situações de necessidade, demonstrando um compromisso constante com a segurança e o bem-estar dos clientes.</p>
-        <h2 style="color: #00a1fc;">Porto Seguro Salva</h2>
+        </section>
+        <br><br><br><br><br><br><br>
+        <section class="container-imagem">
+            <img src="./img-porto/concerto-1.jpg" alt="imagem 1" width="257" height="156">
+            <img src="./img-porto/concerto-2.jpeg" alt="imagem 2" width="257" height="156">
+            <img src="./img-porto/avaliacao.jpeg" alt="Imagem 3" width="257" height="156">
+        </section>
+        <section class="porto-seguro-salva">
+            <h2>Porto Seguro Salva</h2>
         <p>Com isso criamos a Porto Seguro Salva.  
             Uma forma de você entender um pouco mais sobre o seu veículo, garantindo que você saiba o que precisa ser feito de revisão veícular.
             Com um click você detecta o problema do seu carro, sabe  qual peça comprar e quanto tempo leva para o serviço ser feito e  melhor de tudo, você faz isso tudo da sua casa, trabalho, etc..  
             Com isso, basta levar seu veículo para a oficina para iniciar o  serviço</p>
+        </section>
+        <br><br><br><br><br><br><br>
     </main>
-
     <footer>
-        <div class="rodape">
-            <h2 style="text-align: right;">ACOMPANHE A PAORTO EM NOSSAS REDES SOCIAIS</h2>
+        <section class="rodape">
+            <img class="porto-img" src="./img-porto/porto-cabecalho.png" alt="porto seguro">
+            <h2>ACOMPANHE A PAORTO EM NOSSAS REDES SOCIAIS</h2>
             <nav>
                 <ul>
-                    <li><a href="https://web.facebook.com/porto?_rdc=1&_rdr"><img src="./img-icones/facebook.png" alt="facebook" width="24px" height="24px"></a></li>
-                    <li><a href="https://www.instagram.com/porto/"><img src="./img-icones/instagram.png" alt="instagram" width="24px" height="24px"></a></li>
-                    <li><a href="https://www.linkedin.com/company/porto/"><img src="./img-icones/linkedin.png" alt="linedin" width="24px" height="24px"></a></li>
-                    <li><a href="https://www.youtube.com/portoseguro"><img src="./img-icones/youtube.png" alt="youtube" width="24px" height="24px"></a></li>
-                    <li><a href="https://twitter.com/portoseguro"><img src="./img-icones/twitter.png" alt="twitter" width="24px" height="24px"></a></li>
-                    <li><a href="https://www.tiktok.com/@portoseguro"><img src="./img-icones/tiktok.png" alt="tiktok" width="24px" height="24px"></a></li>
+                    <li><a href="https://web.facebook.com/porto?_rdc=1&_rdr"><img src="./img-icones/facebook.png" alt="facebook" width="34px" height="34px"></a></li>
+                    <li><a href="https://www.instagram.com/porto/"><img src="./img-icones/instagram.png" alt="instagram" width="34px" height="34px"></a></li>
+                    <li><a href="https://www.linkedin.com/company/porto/"><img src="./img-icones/linkedin.png" alt="linedin" width="34px" height="34px"></a></li>
+                    <li><a href="https://www.youtube.com/portoseguro"><img src="./img-icones/youtube.png" alt="youtube" width="34px" height="34px"></a></li>
+                    <li><a href="https://twitter.com/portoseguro"><img src="./img-icones/twitter.png" alt="twitter" width="34px" height="34px"></a></li>
+                    <li><a href="https://www.tiktok.com/@portoseguro"><img src="./img-icones/tiktok.png" alt="tiktok" width="34px" height="34px"></a></li>
                 </ul>
             </nav>
-            <h2 style="text-align: right;">BAIXE O APP DA PORTO</h2>
+            <br><br><br><br><br><br><br>
+            <h2>BAIXE O APP DA PORTO</h2>
             <nav>
-                <ul>
+                <ul id="apps">
                     <li><a href="https://apps.apple.com/us/app/porto-seguro-residencial-e/id1511026277"><img src="./img-icones/app-store.png" alt="app store" width="80px" height="24px"></a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=br.com.portoseguro.experienciacliente.mundoporto&referrer=utm_source%3Dhub-vendas%26utm_medium%3Dcta-download%26utm_campaign%3Dhub-vendas"><img src="./img-icones/play-store.png" alt="play store" width="70px" height="22px"></a></li>
                 </ul>
             </nav>
-        </div>
+            <section class="rodape-porto">
+                <img src="./img-porto/porto-rodape.png" alt="porto seguro" width="220px" height="100px">
+            </section>
+        </section>
+        <section class="faixa"> 
+        </section>
     </footer>
 </body>
 </html>

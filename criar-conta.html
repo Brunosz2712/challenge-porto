@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
-    <header>
+    <link rel="stylesheet" href="./css/style.css">
+    <header id="cabecalho">
         <a href="./index.html"><img src="./img-porto/porto-cabecalho.png" alt="Porto Seguro"></a>
-        <hr>
     </header>
 </head>
 <body>
     <main>
-        <h1 style="text-align: center;">Criar Conta</h1>
-        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo">
-        <br><br><br>
-        <input type="text" id="email" name="email" placeholder="Email">
-        <br><br><br>
-        <input type="text" id="senha" name="senha" placeholder="Senha">
-        <br><br><br>
-        <input type="text" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha">
-        <br><br><br>
-        <button style="background-color:  #00a1fc; color: #ffff;">Confirmar</button>
+        <h1 id="criar-conta">CRIAR CONTA</h1>
+            <section class="colocar-dados">
+                <input placeholder="Nome Completo">
+                <br><br><br>
+                <input placeholder="Email">
+                <br><br><br>
+                <input placeholder="Senha">
+                <br><br><br>
+                <input placeholder="Confirmar Senha">
+                <br><br><br>
+                <button id="btn-confirmar">Confirmar</button>
+            </section>
     </main>
     <footer>
-        <div class="rodape"></div>
-        <hr>
-        <br><br>
-        <hr>
+        <section class="fundo-porto">
+            <img src="./img-porto/porto-cabecalho.png" alt="porto seguro" width="220px" height="100px">
+        </section>
     </footer>
 </body>
 </html>

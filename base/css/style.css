@@ -33,8 +33,51 @@
     /* margin-right: 490px; */
 }
 
+.container {
+    background-color: #00a1fc;
+    justify-content: space-between;
+    width: 100%;
+    height: 101px;
+}
+
+.container ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0.5%;
+    
+}
+
+.container ul li{
+    margin-right: 250px;
+}
+
+#apps {
+    display: inline;
+    padding-right: 100px;
+    
+}
+
+#acompanhe{
+    text-align: center;
+    color: #fff;
+}
+
 footer{
     background-color: black;
+    width: 100%;
+    height: 82px;
+}
+
+footer img{
+    justify-content: center;
+    width: 210px;
+    padding-left: 40%;
+    bottom: 100%;
+}
+
+footer #apple{
+    width: 110px;
+    height: 38px;
 }
 
 /* .porto-seguro h2{
@@ -71,13 +114,6 @@ footer{
     gap: 300px; 
 }
 
-.rodape {
-    background-color: #fff;
-    width: 920px;
-    height: 527px;
-    margin: auto; 
-    text-align: right;
-}
 .porto-img{
  padding-right: 290px;       
 }
@@ -86,25 +122,6 @@ footer h2 {
     font-size: 25px;
     text-align: center; 
     color: #00a1fc;
-}
-
-footer li {
-    text-align: center;
-    display: inline;
-    padding-right: 100px;
-}
-
-#apps {
-    text-align: center;
-    display: inline;
-    padding-right: 239px;
-}
-
-.faixa{
-    border-top: 70px solid #000;
-    padding-bottom: 0px;
-    width: 100%;
-    left: 10px;
 }
 
 .rodape-porto{

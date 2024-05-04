@@ -359,3 +359,17 @@ input{
  #parag-porto{
     font-size: 125%;
  }
+
+ #parag-porto2{
+    text-align: center;
+    font-size: 125%;
+ }
+
+ #img-3-1 {
+    width: 421.71px;
+    height: 176.29px;
+    position: absolute;
+    bottom: -490px;
+    left: 50%;
+    transform: translateX(-50%);  
+ }

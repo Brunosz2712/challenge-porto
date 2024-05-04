@@ -261,8 +261,8 @@ input{
 #btn-confirmar{
     background-color: #00a1fc;
     color: #fff;
-    border-radius: 55px; 
-    padding: 2px 2px 2px 2px;
+    border-radius: 55px;
+    padding: 4px 16px;
 }
 
 #login{

@@ -386,3 +386,77 @@ input{
  p {
     font-family: 'Roboto', sans-serif;
  }
+
+ @media screen and (min-width: 1200px) {
+    /* Estilos para telas grandes (LG) e extra grandes (XL) */
+    .container {
+        width: 1139px; /* Mantenha a largura original */
+    }
+    
+    .pag-princ-p-s {
+        width: 1139px; /* Mantenha a largura original */
+    }
+    
+    #img-1, #img-2, #img-3, #img-3-1 {
+        width: 421.71px; /* Mantenha o tamanho original das imagens */
+        height: 176.29px; /* Mantenha o tamanho original das imagens */
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    /* Estilos para telas médias (MD) */
+    .container {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 20px; /* Adicione um espaçamento interno para melhor visualização */
+    }
+    
+    .pag-princ-p-s {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 20px; /* Adicione um espaçamento interno para melhor visualização */
+    }
+    
+    #img-1, #img-2, #img-3, #img-3-1 {
+        width: 100%; /* Faça as imagens ocuparem toda a largura disponível */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para telas de tablets */
+    .container {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 20px; /* Adicione um espaçamento interno para melhor visualização */
+    }
+    
+    .pag-princ-p-s {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 20px; /* Adicione um espaçamento interno para melhor visualização */
+    }
+    
+    #img-1, #img-2, #img-3, #img-3-1 {
+        width: 100%; /* Faça as imagens ocuparem toda a largura disponível */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
+    
+    /* Outros ajustes de estilo específicos para tablets podem ser adicionados aqui */
+}
+
+
+@media screen and (max-width: 576px) {
+    /* Estilos para dispositivos móveis */
+    .container {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 10px; /* Adicione um espaçamento interno menor para melhor visualização */
+    }
+    
+    .pag-princ-p-s {
+        width: 100%; /* Use toda a largura disponível */
+        padding: 0 10px; /* Adicione um espaçamento interno menor para melhor visualização */
+    }
+    
+    #img-1, #img-2, #img-3, #img-3-1 {
+        width: 100%; /* Faça as imagens ocuparem toda a largura disponível */
+        height: auto; /* Mantenha a proporção da imagem */
+    }
+    
+    /* Outros ajustes de estilo específicos para dispositivos móveis podem ser adicionados aqui */
+}

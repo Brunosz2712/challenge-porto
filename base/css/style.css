@@ -16,7 +16,9 @@
     padding: 4px 16px; /* Ajuste o padding conforme necessário */
     text-decoration: none;
     margin-left: 850px;
-    margin-top: 40px;
+    margin-right: auto;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #cabecalho #btn-login {
@@ -26,16 +28,23 @@
     padding: 4px 32px; /* Ajuste o padding conforme necessário */
     text-decoration: none;
     margin-right: 50px;
-    margin-top: 40px;
+    margin-right: auto;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .container {
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* background-color: #000; */
     width: 1139px;
     border-top: 40px;
     height: 622.86px;
     margin: auto;
+    margin-top: 10%;
 }
 
 .p-s {
@@ -51,13 +60,15 @@
 }
 
 .p-s h4 {
-    font-size: 20px; /* Tamanho do texto do título */
+    font-size: 23px; /* Tamanho do texto do título */
     color: #00a1fc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .p-s p {
     font-size: 16px; 
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
 }
 
 .p-s-s{
@@ -73,13 +84,15 @@
 }
 
 .p-s-s h4{
-    font-size: 20px; /* Tamanho do texto do título */
+    font-size: 23px; /* Tamanho do texto do título */
     color: #00a1fc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .p-s-s p{
     font-size: 16px; 
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bot{
@@ -97,13 +110,15 @@
 
 
 .bot h4{
-    font-size: 20px; /* Tamanho do texto do título */
+    font-size: 23px; /* Tamanho do texto do título */
     color: #00a1fc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bot p{
     font-size: 16px; 
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
 }
 
 .p-s-s {
@@ -119,14 +134,11 @@
 
 .bot {
     width: 350px;
-    height: 330.5px;
+    height: 310.5px;
     background-color: #d9d9d9;
     text-align: center;
     border-radius: 8.47px;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 320px;
 }
 
 a{
@@ -192,12 +204,6 @@ footer {
     padding-top: 10%;
 }
 
-
- .porto-seguro h2{
-    font-size: 55px;
-    color: #00a1fc;
-}
-
 .porto-seguro{
     text-align: center;
     font-size: 20px;
@@ -207,10 +213,6 @@ footer {
     left: 34px;
 }
 
-.porto-seguro-salva h2{
-    font-size: 55px;
-    color: #00a1fc;
-}
 .porto-seguro-salva{
     text-align: center;
     font-size: 20px;
@@ -218,13 +220,6 @@ footer {
     height: 232px; 
     top: 215px;
     left: 34px;
-}
-
-.container-imagem{
-    display: flex;
-    justify-content: center;
-    height: 348px;
-    gap: 300px; 
 }
 
 .porto-img{
@@ -244,6 +239,7 @@ footer h2 {
 #criar-conta{
     color: #00a1fc;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .colocar-dados{
@@ -263,11 +259,13 @@ input{
     color: #fff;
     border-radius: 55px;
     padding: 4px 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #login{
     color: #00a1fc;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #f-criar-conta{
@@ -305,38 +303,28 @@ input{
     text-align: center;
  }
 
- .pag-princ-p-s {
-    display: flex;
-    justify-content: center;
-    width: 1139px;
-    height: 494.5px;
-    margin: auto;
-}
-
 #img-1 {
     width: 421.71px;
     height: 176.29px;
     display: flex;
-    margin-top: 10px;
     float: left;
+    margin-top: 50px;
+    
 }
 
 #img-2 {
     width: 421.71px;
     height: 176.29px;
     display: flex;
-    margin-top: 10px;
     float: right;
-    padding-left: 25%;
+    margin-top: 50px;
 }
 
 #img-3 {
     width: 421.71px;
     height: 176.29px;
-    position: absolute;
-    bottom: -569px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
+    
 }
 
 
@@ -348,16 +336,19 @@ input{
     text-decoration: none;
     margin-left: 47%;
     margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
  h1{
     text-align: center;
     color: #00a1fc;
     font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
  #parag-porto{
-    font-size: 125%;
+    font-size: 110%;
+    text-align: center;
  }
 
  #parag-porto2{
@@ -368,8 +359,10 @@ input{
  #img-3-1 {
     width: 421.71px;
     height: 176.29px;
-    position: absolute;
-    bottom: -490px;
-    left: 50%;
-    transform: translateX(-50%);  
+    margin: auto;
  }
+
+ p {
+    font-family: 'Roboto', sans-serif;
+ }
+

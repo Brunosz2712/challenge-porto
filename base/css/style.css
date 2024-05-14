@@ -257,7 +257,9 @@ input{
  }
 
  #porto-f{
-    margin-top: 0px;    
+    margin-top: 0px; 
+    width: 220px; 
+    height: 100px;   
  }
 
  #integrantes{

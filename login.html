@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="./base/css/style.css">
 </head>
 <body>
-    <a href="./index.html"><img src="./base/img-porto/porto-cabecalho.png"></a>
+    <header>
+        <a href="./index.html"><img src="./base/img-porto/porto-cabecalho.png" alt="Porto Seguro"></a>
     </header>
-</head>
-<body>
     <main>
         <h1 id="login">LOGIN</h1>
-            <section class="colocar-dados">
-                <br><br><br>
-                <input id="email" placeholder="Email">
-                <br><br><br>
-                <input id="email" placeholder="Senha">
-                <br><br><br>
-                <button id="btn-confirmar">Confirmar</button>
-            </section>
-        </main>
+        <section class="colocar-dados">
+            <br><br><br>
+            <input id="email" type="email" placeholder="Email">
+            <br><br><br>
+            <input id="senha" type="password" placeholder="Senha">
+            <br><br><br>
+            <button id="btn-confirmar" onclick="fazerLogin()">Confirmar</button>
+            <p id="mensagem"></p>
+        </section>
+    </main>
     <footer id="f-criar-login">
         <img id="porto-f" src="./base/img-porto/porto-rodape.png" alt="porto seguro">
     </footer>
+    <script type="text/javascript" src="./base/java-script/java.js"></script>
 </body>
 </html>

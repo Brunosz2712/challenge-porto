@@ -1,0 +1,37 @@
+.container-porto{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    border-top: 40px;
+}
+
+#img-1 {
+    width: 421.71px;
+    height: 176.29px;
+    display: flex;
+    float: left;
+    margin-top: 50px;
+    
+}
+
+#img-2 {
+    width: 421.71px;
+    height: 176.29px;
+    display: flex;
+    float: right;
+    margin-top: 50px;
+}
+
+#img-3 {
+    width: 421.71px;
+    height: 176.29px;
+    margin-top: 400px;
+    
+}
+
+#img-3-1 {
+    width: 421.71px;
+    height: 176.29px;
+    margin-top: 400px;
+ }

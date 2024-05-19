@@ -1,0 +1,13 @@
+.content {
+    background-color: #00a1fc;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    margin-top: 40px;
+}
+
+.content ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}

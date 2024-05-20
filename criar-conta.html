@@ -15,7 +15,22 @@
     </header>
 
     <main>
-        <section class="colocar-dados">
+        <h1 id="criar-conta">CRIAR CONTA</h1>
+        <form onsubmit="return criarConta(event)">
+            <section class="colocar-dados">
+                <input id="nome-completo" placeholder="Nome Completo" required>
+                <br><br><br>
+                <input id="email" type="email" placeholder="Email" required>
+                <br><br><br>
+                <input id="senha" type="password" placeholder="Senha" required>
+                <br><br><br>
+                <input id="confirmar-senha" type="password" placeholder="Confirmar Senha" required>
+                <br><br><br>
+                <button type="submit" id="btn-confirmar">Confirmar</button>
+                <p id="mensagem"></p>
+                <a id="btn-voltar" href="./index.html">Voltar</a>
+            </section>
+        <!-- <section class="colocar-dados">
             <h1 id="criar-conta">CRIAR CONTA</h1>
             <input id="nome-completo" placeholder="Nome Completo">
             <br><br><br>
@@ -28,7 +43,7 @@
             <button id="btn-confirmar" onclick="criarSenha()">Confirmar</button>
             <p id="mensagem"></p>
             <a id="btn-voltar" href="./index.html">Voltar</a>
-        </section>
+        </section> -->
     </main>
 
     <footer id="f-criar-conta">

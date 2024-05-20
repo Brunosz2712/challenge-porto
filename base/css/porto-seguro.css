@@ -7,7 +7,6 @@
     display: flex;
     float: left;
     flex-direction: column; /* Alinha os elementos verticalmente */
-    justify-content: top; /* Centraliza os elementos verticalmente */
 }
 
 .p-s h4 {

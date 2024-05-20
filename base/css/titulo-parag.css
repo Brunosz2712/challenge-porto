@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: #00a1fc;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #parag-porto{
+    font-size: 110%;
+    text-align: center;
+ }
+
+ #parag-porto2{
+    text-align: center;
+    font-size: 125%;
+ }
+
+ p {
+    font-family: 'Roboto', sans-serif;
+ }
+
+.btn-voltar{
+   display: flex;
+}
+
+#btn-voltar{
+   margin: auto;
+   color: rgba(0, 0, 0, 0.46);
+   border-radius: 55px;
+   padding: 2px 26px;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 2px solid #d9d9d9;
+}
+
+#integrantes-ind{
+   font-family: Arial, Helvetica, sans-serif;
+}

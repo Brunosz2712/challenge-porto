@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+#porto {
+    width: 208px; 
+    right: 110px;
+}
+
+#apple {
+    order: 1;
+    width: 110px;
+    height: 31px;
+    padding-top: 40%;
+}
+
+#android {
+    width: 106px;
+    height: 29px;
+    padding-top: 43%; 
+    margin-right: 6px;
+}

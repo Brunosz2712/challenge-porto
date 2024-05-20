@@ -1,16 +1,11 @@
 .container-porto{
     display: flex;
     justify-content: space-between;
-    /* width: 100%;
-    margin: auto; */
-    border-top: 40px;
 }
 
 #img-1 {
     width: 421.71px;
     height: 176.29px;
-    /* display: flex;
-    float: left; */
     margin-top: 50px;
     
 }
@@ -18,8 +13,6 @@
 #img-2 {
     width: 421.71px;
     height: 176.29px;
-    /* display: flex;
-    float: right; */
     margin-top: 50px;
 }
 
@@ -35,13 +28,4 @@
     height: 176.29px;
     margin-top: 350px;
 }
- 
-#btn-voltar{
-    color: rgba(0, 0, 0, 0.26);
-    border-radius: 55px;
-    padding: 2px 26px;
-    margin: auto;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid #d9d9d9;
-}
+

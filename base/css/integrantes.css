@@ -6,9 +6,19 @@
     text-align: center;
 }
 
- 
- .bruno{
-    text-align: center;
+.bruno img{
+   width: 143px;
+   height: 191px;
+}
+
+ .felipe img{
+   width: 143px;
+   height: 191px;
+}
+
+.pedro img{
+   width: 143px;
+   height: 191px;
  }
 
  #btn-voltar{

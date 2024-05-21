@@ -1,12 +1,7 @@
 #cabecalho {
     display: flex;
     justify-content: space-between;
-    /* padding: 10px; */
-    /* width: 100%; */
-    /* height: 106px;
-    padding: 10px; */
-    /* margin-bottom: 10px; */
-    /* background-color: #fff; */
+    
 }
 
 .botao {

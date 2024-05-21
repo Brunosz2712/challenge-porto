@@ -18,6 +18,7 @@ input{
 
 #btn-confirmar{
     background-color: #00a1fc;
+    color: #fff;
     border-radius: 55px;
     padding: 2px 26px;
     text-decoration: none;
@@ -26,3 +27,7 @@ input{
 
 }
 
+#btn-confirmar:hover{
+    background-color: #fff;
+    color: #00a1fc;
+}

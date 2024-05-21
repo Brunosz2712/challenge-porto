@@ -19,3 +19,10 @@
     word-wrap: break-word;
     font-family: 'Roboto', sans-serif;
 }
+.bot a{
+    color: #000;
+}
+
+.bot a:hover{
+    color: #00a1fc;
+}

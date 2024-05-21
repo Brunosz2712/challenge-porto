@@ -20,3 +20,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.p-s a{
+    color: #000;
+}
+
+.p-s a:hover{
+    color: #00a1fc;
+}

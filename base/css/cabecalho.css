@@ -1,12 +1,7 @@
 #cabecalho {
     display: flex;
     justify-content: space-between;
-    /* padding: 10px; */
-    /* width: 100%; */
-    /* height: 106px;
-    padding: 10px; */
-    /* margin-bottom: 10px; */
-    /* background-color: #fff; */
+    
 }
 
 .botao {
@@ -31,3 +26,12 @@
     border: 2px solid #d9d9d9;
 }
 
+#btn-criar-conta:hover{
+    background-color: #a9a9aa;
+    color:  #fff;
+ }
+
+ #btn-login:hover{
+    background-color: #a9a9aa;
+    color:  #fff;
+ }

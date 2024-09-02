@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
-    <link rel="stylesheet" href="./base/css/bot.css">
-    <link rel="stylesheet" href="./base/css/cabecalho.css">
-    <link rel="stylesheet" href="./base/css/container.css">
+    <link rel="stylesheet" href="./base/css/pagina-inicial.css">
     <link rel="stylesheet" href="./base/css/footer.css">
-    <link rel="stylesheet" href="./base/css/porto-seguro-salva.css">
-    <link rel="stylesheet" href="./base/css/porto-seguro.css">
-    <link rel="stylesheet" href="./base/css/redes-sociais.css">
-    <link rel="stylesheet" href="./base/css/responsive.css">
-    <link rel="stylesheet" href="./base/css/titulo-parag.css">
-    <link rel="stylesheet" href="./base/css/integrantes-ind.css">
+    
 </head>
+
 <body>
+
     <header id="cabecalho">
         <img src="./base/img-porto/porto-cabecalho.png" alt="Porto Seguro">
         <div class="botao">
@@ -23,30 +18,61 @@
             <a id="btn-login" href="./login.html">Login</a>
         </div>
     </header>
-    <main>
+
+    <main> 
         <div class="container">
-            <div class="p-s">
-                <h4>Porto Seguro</h4>
-                <br><br>
-                <p>Aqui, você vai conhecer um pouco mais sobre a Porto Seguro</p>
-                <br><br><br>
-                <p>Acessar a página <a href="./porto-seguro.html">aqui...</a></p>
+            <div class="porto-seguro">
+                <div class="titulo">
+                    <h1 class="porto-seguro-h1">PORTO SEGURO</h1>
+                </div>
+                <div class="texto porto">
+                    <p id="parag-porto">A Porto é uma empresa com mais de 75 anos de experiência, atuando como um ecossistema completo que vai além de uma seguradora. Composta por 27 empresas, a Porto abrange três principais áreas de negócios: Porto Seguro, Porto Saúde e Porto Bank, oferecendo soluções de proteção para diversas necessidades, desde o cotidiano até momentos significativos. A Porto Seguro Companhia de Seguros Gerais, fundada em 1945, é a principal empresa do grupo, especializada em seguros de veículos, imóveis e transporte. Outras áreas de atuação incluem seguros de vida, previdência privada, saúde empresarial coletivo, assistência à saúde e planos odontológicos para pessoas jurídicas.
+                    </p>
+                </div>
             </div>
-            <div class="bot">
-                <h4>Duvidas? <br> Esclareça com o nosso BOT</h4>
-                <br><br>
-                <p>Aqui, você vai ser ajudado! Graças ao nosso BOT</p>
-                <br><br><br>
-                <p>Acessar a página <a href="./bot-porto.html">aqui...</a></p>
+            <div class="container-porto">
+                <img id="img-1-1" src="./base/img-porto/empresa-porto-1.jpeg" alt="porto">
+                <img id="img-2-2" src="./base/img-porto/empresa-porto-2.jpg" alt="porto-2">
             </div>
-            <div class="p-s-s">
-                <h4>Help Car</h4>
-                <br><br>
-                <p>Aqui, você vai conhecer um pouco mais sobre a Help Car</p>
-                <br><br><br>
-                <p>Acessar a página <a href="./help-car.html">aqui...</a></p>
+            <div class="help-car">
+                <div class="titulo">
+                    <div class="titulo">
+                        <h1 class="help-car-h1">HELP CAR</h1>
+                    </div>
+                </div>
+                <div class="texto-help-car">
+                    <p id="parag-help-car">Muitos clientes podem sair insatisfeitos ou desconfiados ao levar seus carros ao mecânico, especialmente quando se sentem enganados ou pressionados a realizar serviços desnecessários. Para resolver isso, criamos o Help Car, um bot que diagnostica o problema do veículo, indica as peças necessárias, estima o custo do serviço e das peças, e verifica se há uma oficina próxima ao seu endereço. O Help Car oferece suporte, tirando dúvidas e fornecendo um valor aproximado, dando ao cliente mais confiança e controle sobre o serviço a ser realizado.
+                    </p>
             </div>
-            <div class="box-2"></div>
+                <div class="container-help-car">
+                    <img id="img-1" src="./base/img-porto/concerto-1.jpg" alt="concerto-1">
+                    <img id="img-2" src="./base/img-porto/avaliacao.jpeg" alt="avaliacao">
+                </div>
+                <div class="integrantes">
+                    <div class="titulo">
+                        <h1 class="integrantes-h1">INTEGRANTES</h1>
+                    </div>
+                    <div class="grupo">
+                        <div class="pedro">
+                            <img src="./base/prototipo/desktop/pedro.jpeg" alt="pedro">
+                            <h3>NOME: Pedro Manzo Yokoo</h3>
+                            <p>RM: 556115</p>
+                            <p>TURMA: 1TDSPI</p>
+                        </div>
+                        <div class="felipe">
+                            <img src="./base/prototipo/desktop/felipe.jpeg" alt="felipe">
+                            <h3>NOME: Felipe Orikasa</h3>
+                            <p>RM: 557435</p>
+                            <p>TURMA: 1TDSPG</p>
+                        </div>
+                        <div class="bruno">
+                            <img src="./base/prototipo/desktop/bruno.jpeg" alt="bruno">
+                            <h3>NOME: Bruno da Silva Souza</h3>
+                            <p>RM: 94346</p>
+                            <p>TURMA: 1TDSPG</p>
+                        </div>
+                    </div>
+                </div>
             <div class="rede-soc">
                 <h2 id="acompanhe">ACOMPANHE A PORTO EM NOSSAS REDES SOCIAIS</h2>
                 <nav id="apps">
@@ -68,17 +94,24 @@
                     <a href="https://www.tiktok.com/@portoseguro" target="_blank">
                         <img src="./base/img-icones/TikTok.png" alt="TikTok">
                     </a>                    
-                    <br><br><br><br><br>
-                    <a id="integrantes-ind" href="./integrantes.html"><h5>INTEGRANTES</h5></a>
                 </nav>
             </div>
-            <div class="box"></div>
         </div>    
     </main>
-    <footer>
-        <a href="https://apps.apple.com/us/app/porto-seguro-residencial-e/id1511026277" target="_blank"><img id="apple" src="./base/img-icones/app-store.png" alt="app store"></a>
-        <img id="porto" src="./base/img-icones/porto-seg.png" alt="porto">
-        <a href="https://play.google.com/store/apps/details?id=br.com.portoseguro.experienciacliente.mundoporto&referrer=utm_source%3Dhub-vendas%26utm_medium%3Dcta-download%26utm_campaign%3Dhub-vendas" target="_blank"><img id="android" src="./base/img-icones/play-store.png" alt="play store"></a>
-    </footer>
+
+        <footer>
+            <div class="apple">
+                <a href="https://apps.apple.com/us/app/porto-seguro-residencial-e/id1511026277" target="_blank"><img id="apple" src="./base/img-icones/app-store.png" alt="app store"></a>
+            </div>
+            <div class="p-s">
+                <img id="porto" src="./base/img-icones/porto-seg.png" alt="porto">
+            </div>
+            <div class="android">
+                <a href="https://play.google.com/store/apps/details?id=br.com.portoseguro.experienciacliente.mundoporto&referrer=utm_source%3Dhub-vendas%26utm_medium%3Dcta-download%26utm_campaign%3Dhub-vendas" target="_blank"><img id="android" src="./base/img-icones/play-store.png" alt="play store"></a>
+            </div>
+        </footer>
+
 </body>
 </html>
+
+

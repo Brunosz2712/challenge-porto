@@ -1,0 +1,135 @@
+body {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.botao {
+    display: flex;
+    margin-left: 1200px;
+    margin-top: -5%;
+    justify-content: space-around;
+}
+
+#btn-login, #btn-criar-conta {
+    background-color: #00a1fc;
+    color: #fff;
+    border-radius: 65px;
+    width: 85px;
+    height: 17px;    
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #d9d9d9;
+}
+
+#btn-criar-conta:hover, #btn-login:hover {
+    background-color: #000;
+    color:  #00a1fc;
+}
+
+h1 {
+    color: #00a1fc;
+    text-align: center;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.porto-seguro, .help-car {
+    justify-content: center;
+    text-align: center;
+    width: 1085px;
+    height: 181px;
+    border-radius:  10.16px;
+    border: 1px solid #d9d9d9;
+}
+
+#parag-porto {
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+    margin-top: -1.5%;
+}
+
+.porto-seguro-h1, .help-car-h1 {
+    justify-content: center;
+    font-size: 34.12px;
+}
+
+#parag-help-car {
+    color: #fff;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 110%;
+    margin-top: -2%;
+}
+
+.container-porto, .container-help-car {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-porto {
+    flex-wrap: nowrap;
+    gap: 500px;
+}
+
+#img-1-1, #img-2-2, #img-1, #img-2 {
+    border-radius: 17.23px;
+    width: 300px;
+    right: 300px;
+}
+
+.integrantes {
+    background: linear-gradient(to bottom, #000000, #4D0658);
+    height: 438px;
+    border-radius: 10.16px;
+    border: 2px solid #d9d9d9;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.grupo h3 {
+    color: #d9d9d9;
+}
+
+.integrantes-h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 34.12px;
+}
+
+.felipe, .pedro, .bruno {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.felipe img, .pedro img, .bruno img {
+    width: 143px;
+    height: 191px;
+    border-radius: 15px;
+}

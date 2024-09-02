@@ -1,12 +1,15 @@
-footer {
+footer{
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    margin: 0 auto;
+    margin-top: 70%;
+    margin-bottom: -1%;
 }
 
 #porto {
     width: 208px; 
     right: 110px;
+    margin-bottom: 0%;
 }
 
 #apple {
@@ -14,11 +17,13 @@ footer {
     width: 110px;
     height: 31px;
     padding-top: 40%;
+    margin-left: 0%;
 }
 
 #android {
     width: 106px;
     height: 29px;
-    padding-top: 43%; 
+    padding-top: 41%; 
     margin-right: 6px;
+    margin-left: -3%;
 }

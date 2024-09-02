@@ -1,7 +1,7 @@
-#criar-conta{
-    color: #00a1fc;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
 }
 
 .colocar-dados{
@@ -9,8 +9,8 @@
 }
 
 input{
-    background-color: rgba(217, 217, 217, 0.24);
-    color: rgba(0, 0, 0, 0.26);
+    background-color: #d9d9d9;
+    color: #000;
     border-radius: 55px;
     padding: 3px 3px 3px 3px;
     width: 400px;
@@ -28,6 +28,53 @@ input{
 }
 
 #btn-confirmar:hover{
-    background-color: #fff;
+    background-color: #000;
     color: #00a1fc;
+}
+
+h1{
+    text-align: center;
+    color: #00a1fc;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.btn-voltar{
+   display: flex;
+}
+
+#btn-voltar{
+   margin: auto;
+   background-color: #00a1fc;
+   color: #d9d9d9;
+   border-radius: 55px;
+   padding: 2px 26px;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 2px solid #d9d9d9;
+}
+
+#btn-voltar:hover{
+   background-color: #000;
+   color:  #fff;
+}
+
+#f-criar-conta{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 111px;
+    height: 80px;
+    background-color: #000;
+ }
+
+#porto-f{
+    margin-top: 0px; 
+    width: 220px; 
+    height: 100px;   
 }

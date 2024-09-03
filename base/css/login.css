@@ -1,87 +1,88 @@
+
 body {
-   background-color: #000;
-   width: 100%;
-   height: 100%;
+   background-color: #000; 
+   width: 100%;            
+   height: 100%;           
 }
 
-/* #criar-conta{
-   color: #00a1fc;
-   text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
-} */
 
-.colocar-dados{
-   text-align: center;
+.colocar-dados {
+   text-align: center; 
 }
 
-input{
-   background-color: #d9d9d9;
-   color: #000;
-   border-radius: 55px;
-   padding: 3px 3px 3px 3px;
-   width: 400px;
+
+input {
+   background-color: #d9d9d9; 
+   color: #000;               
+   border-radius: 55px;       
+   padding: 3px;              
+   width: 400px;              
 }
 
-#btn-confirmar{
-   background-color: #00a1fc;
-   color: #fff;
-   border-radius: 55px;
-   padding: 2px 26px;
-   text-decoration: none;
+
+#btn-confirmar {
+   background-color: #00a1fc; 
+   color: #fff;               
+   border-radius: 55px;       
+   padding: 2px 26px;         
+   text-decoration: none;     
    font-family: Arial, Helvetica, sans-serif;
    border: 2px solid #d9d9d9;
-
 }
 
-#btn-confirmar:hover{
-   background-color: #000;
-   color: #00a1fc;
+
+#btn-confirmar:hover {
+   background-color: #000; 
+   color: #00a1fc;         
 }
 
-h1{
-   text-align: center;
-   color: #00a1fc;
-   font-size: 400%;
-   font-family: Arial, Helvetica, sans-serif;
+
+h1 {
+   text-align: center;                           
+   color: #00a1fc;                              
+   font-size: 400%;                              
+   font-family: Arial, Helvetica, sans-serif;    
 }
 
 p {
-   font-family: 'Roboto', sans-serif;
-   color: #fff;
+   font-family: 'Roboto', sans-serif; 
+   color: #fff;                       
 }
 
-.btn-voltar{
+.btn-voltar {
    display: flex;
 }
 
-#btn-voltar{
-   margin: auto;
-   background-color: #00a1fc;
-   color: #d9d9d9;
-   border-radius: 55px;
-   padding: 2px 26px;
-   text-decoration: none;
-   font-family: Arial, Helvetica, sans-serif;
-   border: 2px solid #d9d9d9;
+
+#btn-voltar {
+   margin: auto;                       
+   background-color: #00a1fc;         
+   color: #d9d9d9;                    
+   border-radius: 55px;                
+   padding: 2px 26px;                  
+   text-decoration: none;              
+   font-family: Arial, Helvetica, sans-serif; 
+   border: 2px solid #d9d9d9;          
 }
 
-#btn-voltar:hover{
-   background-color: #000;
-   color:  #fff;
+#btn-voltar:hover {
+   background-color: #000; 
+   color:  #fff;           
 }
 
-#f-criar-login{
-   align-items: center;
-   justify-content: center;
-   display: flex;
-   margin-top: 220px;
-   height: 80px;
-   background-color: #000;
+
+#f-criar-login {
+   align-items: center;            
+   justify-content: center;        
+   display: flex;                  
+   margin-top: 220px;              
+   height: 80px;    
+   background-color: #000;         
 }
 
-#porto-f{
-   margin-top: 0px; 
-   width: 220px; 
-   height: 100px;   
-}
 
+#porto-f {
+   margin-top: 0px;  
+   width: 220px;     
+   height: 100px;    
+}

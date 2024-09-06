@@ -50,7 +50,7 @@ p {
     justify-content: space-between;
     margin-top: 5%;
     margin-bottom: 5%;
-    gap: 500px;
+    gap: 50px;
 }
 
 .imgPorto {
@@ -118,10 +118,83 @@ p {
     color: #fff;
 }
 
-
-.imgPorto2, img{
+.imgPorto2, img {
     width: 14%; 
     right: 12%;
     margin-bottom: 0%;
-} 
+}
 
+
+@media (max-width: 1024px) {
+    .portoSeguro, .helpCar {
+        width: 90%;
+        height: auto;
+    }
+
+    .containerPorto, .containerHelpCar {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .imgPorto {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    .paragPorto, .paragHelpCar {
+        font-size: 90%;
+    }
+
+    .grupo img {
+        width: 130px;
+        height: 170px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .portoSeguro, .helpCar {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerPorto, .containerHelpCar {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+    }
+
+    .imgPorto {
+        width: 150px;
+    }
+
+    .integrantes {
+        height: auto;
+        padding: 20px;
+    }
+
+    .grupo {
+        justify-content: space-between;
+    }
+
+    .grupo img {
+        width: 100px;
+        height: 130px;
+    }
+
+    .acompanhe {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .imgPorto2, img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}

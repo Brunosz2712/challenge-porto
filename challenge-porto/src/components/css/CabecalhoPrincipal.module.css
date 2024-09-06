@@ -1,8 +1,11 @@
-header{
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.cabecalho{
+.cabecalho {
     width: 280px;
 }
 
@@ -10,14 +13,13 @@ header{
     display: flex;
     margin-left: auto;
     margin-top: auto;
-    /* margin-top: -5%; */
 }
 
 .btnCriarConta, .btnLogin {
     background-color: #00a1fc;
     color: #fff;
-    width: 85px;
-    height: 20px;  
+    width: 120px; 
+    height: 35px;  
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #d9d9d9;
@@ -36,4 +38,51 @@ a:hover {
 }
 
 
-    
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .cabecalho {
+        width: 200px;
+    }
+
+    .btnCriarConta, .btnLogin {
+        width: 100px;
+        height: 30px;  
+        margin-right: 2%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .cabecalho {
+        width: 150px;
+        margin-bottom: 10px; 
+    }
+
+    .botaoCadastroLogin {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btnCriarConta, .btnLogin {
+        width: 90%;  
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        background-color: #00a1fc;
+        color: #fff;
+    }
+}

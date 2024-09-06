@@ -30,6 +30,14 @@ export default function ConteudoCriarConta() {
 
             </section>
 
+                    <div>
+                        <button className={styles.btnConfirmar}>Confirmar</button>
+                    </div>
+
+                    <div>
+                        <a href=""  className={styles.btnVoltar}>Voltar</a>
+                    </div>
+
             <div className={styles.fCriarConta}> 
                 <img src={portoSeguro} alt="Porto Seguro" className={styles.portoF} />
             </div>

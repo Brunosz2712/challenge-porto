@@ -18,8 +18,14 @@ export default function Conteudo(){
                         <input type="passaword" placeholder='Senha' className={styles.senha}/>
                     </div>
 
-                    {/* <button className={styles.btnConfirmar}></button>
-                    <a href=""  className={styles.btnVoltar}></a> */}
+                    <div>
+                        <button className={styles.btnConfirmar}>Confirmar</button>
+                    </div>
+
+                    <div>
+                        <a href=""  className={styles.btnVoltar}>Voltar</a>
+                    </div>
+            
                 </section>
             </form>
             <div  className={styles.fCriarLogin}>

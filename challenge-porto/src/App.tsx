@@ -1,11 +1,12 @@
-import CabecalhoPrincipal from "./components/Paginainicial/PaginaPrincipalCabecalho/CabacalhoPrincipal";
-import ConteudoPrincipal from "./components/Paginainicial/PaginaPrincipalConteudo/ConteudoPrincipal";
+import Cabecalho from "./components/PaginaCirarConta/CabecalhoCriarConta";
+import Conteudo from "./components/PaginaCirarConta/ConteudoCriarConta";
 
 export default function App() {
   return (
     <div>
-      <CabecalhoPrincipal />
-      <ConteudoPrincipal />
+      <Cabecalho />
+      <Conteudo />
     </div>
   );
 }
+

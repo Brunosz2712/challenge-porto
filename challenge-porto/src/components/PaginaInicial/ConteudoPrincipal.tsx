@@ -5,7 +5,7 @@ import Avaliacao from '../img/avaliacao.jpeg'
 import Felipe from '../img/felipe.jpeg'
 import Pedro from '../img/pedro.jpeg'
 import Bruno from '../img/bruno.jpeg'
-import Site from '../IntegrantesSite/Site'
+import Site from './Site'
 import Porto from '../img/porto-seg.png';
 import styles from '../css/ConteudoPrincipal.module.css'
 

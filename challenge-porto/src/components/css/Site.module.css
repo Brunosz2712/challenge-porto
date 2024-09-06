@@ -1,0 +1,10 @@
+.apps {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px; 
+}
+
+.apps img{
+    width: 34px;
+    height: 34px;
+}

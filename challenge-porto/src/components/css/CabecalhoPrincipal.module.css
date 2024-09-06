@@ -1,0 +1,88 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecalho {
+    width: 280px;
+}
+
+.botaoCadastroLogin {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.btnCriarConta, .btnLogin {
+    background-color: #00a1fc;
+    color: #fff;
+    width: 120px; 
+    height: 35px;  
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #d9d9d9;
+    margin-right: 3%;
+    border-radius: 20px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+a:hover {
+    background-color: #000;
+    color: #00a1fc;
+    border-radius: 20px; 
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .cabecalho {
+        width: 200px;
+    }
+
+    .btnCriarConta, .btnLogin {
+        width: 100px;
+        height: 30px;  
+        margin-right: 2%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .cabecalho {
+        width: 150px;
+        margin-bottom: 10px; 
+    }
+
+    .botaoCadastroLogin {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btnCriarConta, .btnLogin {
+        width: 90%;  
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        background-color: #00a1fc;
+        color: #fff;
+    }
+}

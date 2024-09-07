@@ -1,10 +1,12 @@
+/* Estilos gerais */
+
 body {
    background-color: #000;
    width: 100%;
    height: 100%;
 }
 
-.colocarDdos {
+.colocarDados {
    text-align: center;
 }
 
@@ -22,20 +24,19 @@ body {
    color: #000;
 }
 
-/* Mesmas dimensões do botão de Login */
 .btnConfirmar, .btnVoltar {
    background-color: #00a1fc;
    color: #fff;
-   width: 85px;        /* Largura idêntica ao botão Login */
-   height: 20px;       /* Altura idêntica ao botão Login */
+   width: 85px;        
+   height: 20px;       
    text-decoration: none;
    font-family: Arial, Helvetica, sans-serif;
    border: 1px solid #d9d9d9;
-   border-radius: 20px; /* Mesma borda arredondada */
+   border-radius: 20px; 
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 20px auto;  /* Centralização */
+   margin: 20px auto;  
 }
 
 .btnConfirmar:hover, .btnVoltar:hover {
@@ -70,7 +71,15 @@ p {
    height: 100px;
 }
 
-/* Media Queries */
+/* Mensagem de sucesso */
+.successMessage {
+   color: green;
+   font-size: 1em;
+   margin-top: 20px;
+   display: block;
+}
+
+/* Responsividade */
 
 @media (max-width: 1200px) {
    .email, .senha {
@@ -78,8 +87,8 @@ p {
    }
    
    .btnConfirmar, .btnVoltar {
-       width: 75px;    /* Ajusta a largura para telas menores */
-       height: 18px;   /* Ajusta a altura para telas menores */
+       width: 75px;   
+       height: 18px;  
    }
    
    .portoF {
@@ -94,13 +103,13 @@ p {
    }
    
    .btnConfirmar, .btnVoltar {
-       width: 70px;    /* Ajusta a largura para tablets e smartphones */
-       height: 16px;   /* Ajusta a altura para tablets e smartphones */
+       width: 70px;   
+       height: 16px;  
    }
    
    .fCriarLogin {
-       margin-top: 150px; /* Ajusta a margem superior */
-       height: 60px;      /* Ajusta a altura */
+       margin-top: 150px;
+       height: 60px;     
    }
    
    .portoF {
@@ -109,7 +118,7 @@ p {
    }
    
    h1 {
-       font-size: 300%; /* Reduz o tamanho da fonte para telas menores */
+       font-size: 300%; 
    }
 }
 
@@ -119,13 +128,13 @@ p {
    }
    
    .btnConfirmar, .btnVoltar {
-       width: 60px;    /* Ajusta a largura para telas pequenas */
-       height: 14px;   /* Ajusta a altura para telas pequenas */
+       width: 60px;    
+       height: 14px;   
    }
    
    .fCriarLogin {
-       margin-top: 100px; /* Ajusta a margem superior */
-       height: 50px;      /* Ajusta a altura */
+       margin-top: 100px; 
+       height: 50px;      
    }
    
    .portoF {
@@ -134,6 +143,44 @@ p {
    }
    
    h1 {
-       font-size: 250%; /* Reduz ainda mais o tamanho da fonte para telas pequenas */
+       font-size: 250%; 
    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+}
+
+.cabecalho {
+    width: 280px;  
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        width: 200px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;   
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        width: 160px;  
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;   
+    }
 }

@@ -1,9 +1,16 @@
+import PortoSeguro from '../img/porto-cabecalho.png'
 import portoSeguro from '../img/porto-rodape.png';
 import styles from '../css/Conteudo.CriarConta.module.css';
 
-export default function ConteudoCriarConta() {
-    return ( 
-        <main>
+export default function CriarConta() {
+    return (
+        <div className={styles.ConteudoCriarConta}>
+
+            <header>
+                <img className={styles.cabecalho} src={PortoSeguro} alt="porto-seguro-cabecalho" />
+            </header>
+
+            <main>
             <section className={styles.colocarDados}>
 
                 <h1 className={styles.criarConta}>CRIAR CONTA</h1>
@@ -43,6 +50,7 @@ export default function ConteudoCriarConta() {
             </div>
 
         </main>
-        
+
+        </div>
     );
 }

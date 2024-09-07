@@ -1,12 +1,18 @@
-import Cabecalho from "./components/PaginaInicial/CabacalhoPrincipal";
-import Conteudo from "./components/PaginaInicial/ConteudoPrincipal";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Inicio from './components/PaginaInicial/Inicio';
+import CriarConta from './components/PaginaCirarConta/CriarConta';
+import Login from './components/PaginaLogin/Login';
 
-export default function App() {
-  return (
-    <div>
-      <Cabecalho />
-      <Conteudo />
-    </div>
-  );
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Inicio />} />
+                <Route path="/criar-conta" element={<CriarConta />} />
+                <Route path="/login" element={<Login />} />
+            </Routes>
+        </Router>
+    );
 }
 
+export default App;

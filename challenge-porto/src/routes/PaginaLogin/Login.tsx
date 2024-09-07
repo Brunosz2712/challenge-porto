@@ -1,10 +1,17 @@
+import PortoSeguro from '../img/porto-cabecalho.png'
 import portoSeguro from '../img/porto-rodape.png'
-
 import styles from '../css/LoginConteudo.module.css'
 
-export default function Conteudo(){
-    return(
-        <main>
+export default function Login() {
+    return (
+
+        <div className={styles.LoginConteudo}>
+
+            <header>
+                <img className={styles.cabecalho} src={PortoSeguro} alt="porto-seguro-cabecalho" />
+            </header>
+
+            <main>
             <form action="">
                 <section className={styles.colocarDados}>
 
@@ -32,5 +39,7 @@ export default function Conteudo(){
                 <img src={portoSeguro} alt="Porto Seguro"  className={styles.portoF} />
             </div>
         </main>
+
+        </div>
     );
 }

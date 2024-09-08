@@ -1,4 +1,4 @@
-### Projeto Porto Seguro - Help Car
+# Projeto Porto Seguro - Help Car
 
 Este é um projeto web desenvolvido em **React** que apresenta informações sobre a empresa Porto Seguro e seu serviço chamado Help Car. O projeto inclui funcionalidades como criação de conta, login e navegação entre páginas.
 
@@ -12,11 +12,11 @@ Este é um projeto web desenvolvido em **React** que apresenta informações sob
 - [Autores](#autores)
 
 
-### Descrição:
+## Descrição:
 
 O Help Car é um bot integrado ao site da Porto Seguro que auxilia os usuários a diagnosticar problemas em seus veículos, estimar custos de reparos, e encontrar oficinas próximas. Além disso, o sistema inclui páginas para criar uma conta e fazer login para acessar informações personalizadas.
 
-### Requisitos:
+## Requisitos:
 
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
@@ -24,7 +24,7 @@ Node.js (versão 12 ou superior)
 npm (ou yarn como alternativa)
 Um navegador web atualizado
 
-### Instalação:
+## Instalação:
 
 1º- Clone este repositório para sua máquina local:https://github.com/Brunosz2712/challenge-porto.git
 
@@ -37,7 +37,7 @@ npm install
 4º- Pararodar no navegador:
 npm run dev -> em segudo clique na letra o
 
-### Funcionalidades:
+## Funcionalidades:
 
 Página Inicial: Exibe informações sobre a Porto Seguro e o serviço Help Car.
 
@@ -49,7 +49,7 @@ Diagnóstico de Veículo: O bot Help Car fornece suporte para diagnósticos de v
 
 Redes Sociais: Acompanhe as novidades da Porto Seguro nas redes sociais.
 
-### Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -64,18 +64,18 @@ CSS Modules: Para estilização dos componentes de forma modular.
 LocalStorage: Para simulação de armazenamento de dados dos usuários (como e-mail e senha).
 
 
-### Autores:
+## Autores:
 
-# Pedro Manzo Yokoo
+### Pedro Manzo Yokoo
 RM: 556115
 Turma: 1TDSPI
 
-# Felipe Orikasa
+### Felipe Orikasa
 RM: 557435
 Turma: 1TDSPG
 
-# Bruno da Silva Souza
+### Bruno da Silva Souza
 RM: 94346
 Turma: 1TDSPG
 
-### Link do vídeo
+## Link do vídeo

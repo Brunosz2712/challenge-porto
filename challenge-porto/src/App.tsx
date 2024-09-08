@@ -6,12 +6,14 @@ import Login from './components/PaginaLogin/Login';
 function App() {
     return (
         <Router>
-            <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/criar-conta" element={<CriarConta />} />
-                <Route path="/login" element={<Login />} />
-            </Routes>
-        </Router>
+    <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/home" element={<Inicio />} />  {/* Adicionando rota para '/home' */}
+        <Route path="/criar-conta" element={<CriarConta />} />
+        <Route path="/login" element={<Login />} />
+    </Routes>
+</Router>
+
     );
 }
 

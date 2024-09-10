@@ -1,6 +1,6 @@
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
-import styles from '../css/LoginConteudo.module.css';
+import styles from '../styles/LoginConteudo.module.css';
 import { Link } from 'react-router-dom';
 
 export default function Login() {

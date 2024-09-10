@@ -1,6 +1,6 @@
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
-import styles from '../css/Conteudo.CriarConta.module.css';
+import styles from '../styles/ConteudoCriarConta.module.css';
 import { Link } from 'react-router-dom';
 
 

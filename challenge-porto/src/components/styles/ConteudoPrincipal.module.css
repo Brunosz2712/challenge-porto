@@ -33,7 +33,14 @@ p {
     margin-bottom: 5%;
 }
 
-.paragPorto, .paragHelpCar {
+.paragPorto {
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+    margin-top: -1.5%;
+}
+
+.paragHelpCar {
     color: #fff;
     text-align: center;
     font-size: 100%;
@@ -156,12 +163,28 @@ p {
 
 
 @media (max-width: 768px) {
-    .portoSeguro, .helpCar {
+    .portoSeguro {
         width: 100%;
         height: auto;
     }
 
-    .containerPorto, .containerHelpCar {
+    .helpCar {
+        width: 100%;
+        height: auto;
+    }
+
+    
+
+    .containerPorto{
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+    }
+
+    .containerHelpCar {
         display: flex;
         justify-content: space-between;
         gap: 10px;

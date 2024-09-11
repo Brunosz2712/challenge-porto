@@ -17,7 +17,7 @@ export default function Inicio() {
             <header>
                 <img className={styles.cabecalho} src={PortoSeguro} alt="porto-seguro-cabecalho" />
                 <div className={styles.botaoCadastroLogin}>
-                    <Link className={styles.btnCriarConta} to="/criar-conta">Cadastro</Link>
+                    <Link className={styles.btnCriarConta} to="/criar-conta">Criar Conta</Link>
                     <Link className={styles.btnLogin} to="/login">Login</Link>
                 </div>
             </header>

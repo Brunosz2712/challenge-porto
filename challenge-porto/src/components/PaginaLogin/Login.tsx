@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
-import styles from '../style/LoginConteudo.module.css';
+import styles from '../styles/LoginConteudo.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Login() {

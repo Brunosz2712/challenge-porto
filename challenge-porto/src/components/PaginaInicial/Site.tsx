@@ -4,7 +4,7 @@ import Linkedin from '../img/LinkedIn.png';
 import Youtube from '../img/YouTube.png';
 import Twitter from '../img/Twitter.png';
 import Tiktok from '../img/TikTok.png';
-import styles from '../css/Site.module.css'
+import styles from '../style/Site.module.css'
 
 export default function Site() {
     return (

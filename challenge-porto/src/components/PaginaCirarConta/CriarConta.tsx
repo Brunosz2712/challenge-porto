@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
-import styles from '../css/Conteudo.CriarConta.module.css';
+import styles from '../style/Conteudo.CriarConta.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function CriarConta() {

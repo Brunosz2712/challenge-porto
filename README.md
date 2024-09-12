@@ -79,3 +79,7 @@ RM: 94346
 Turma: 1TDSPG
 
 ## Link do vídeo
+[Help Car](#https://youtu.be/OgbFXijXG2U)
+
+## Link do fígma
+[Figma](#https://www.figma.com/design/HqeU2mdoU7giLhEPMLAC7j/HELP-CAR?node-id=0-1&node-type=canvas&t=rcKGYd4ZRg9DcCx0-0)

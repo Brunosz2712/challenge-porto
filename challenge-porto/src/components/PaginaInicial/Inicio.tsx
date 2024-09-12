@@ -9,7 +9,6 @@ import Bruno from '../img/bruno.jpeg';
 import Site from './Site';
 import Porto from '../img/porto-seg.png';
 import styles from '../styles/ConteudoPrincipal.module.css';
-import { Link } from 'react-router-dom';
 
 export default function Inicio() {
     return (
@@ -17,8 +16,8 @@ export default function Inicio() {
             <header>
                 <img className={styles.cabecalho} src={PortoSeguro} alt="porto-seguro-cabecalho" />
                 <div className={styles.botaoCadastroLogin}>
-                    <Link className={styles.btnCriarConta} to="/criar-conta">Criar Conta</Link>
-                    <Link className={styles.btnLogin} to="/login">Login</Link>
+                    <a className={styles.btnCriarConta} href="/criar-conta">Criar Conta</a>
+                    <a className={styles.btnLogin} href="/login">Login</a>
                 </div>
             </header>
 

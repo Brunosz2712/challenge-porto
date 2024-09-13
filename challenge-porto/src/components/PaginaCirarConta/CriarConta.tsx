@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
 import styles from '../styles/Conteudo.CriarConta.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function CriarConta() {
     // Estados para os campos de input
@@ -103,7 +103,7 @@ export default function CriarConta() {
                 </section>
 
                 <div>
-                    <Link to="/" className={styles.btnVoltar}>Voltar</Link>
+                    <a href="/" className={styles.btnVoltar}>Voltar</a>
                 </div>
 
                 <div className={styles.fCriarConta}>

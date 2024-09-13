@@ -131,6 +131,11 @@ p {
     margin-bottom: 0%;
 }
 
+.gitHub{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 @media (max-width: 1024px) {
     .portoSeguro, .helpCar {

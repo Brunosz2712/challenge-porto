@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PortoSeguro from '../img/porto-cabecalho.png';
 import portoSeguro from '../img/porto-rodape.png';
 import styles from '../styles/LoginConteudo.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     // Estados para armazenar o email, senha e a mensagem de feedback
@@ -72,8 +72,7 @@ export default function Login() {
                         </div>
 
                         <div>
-                            {/* Navegação usando Link */}
-                            <Link to="/" className={styles.btnVoltar}>Voltar</Link>
+                            <a href="/" className={styles.btnVoltar}>Voltar</a>
                         </div>
                     </section>
                 </form>

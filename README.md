@@ -26,16 +26,15 @@ Um navegador web atualizado
 
 ## Instalação:
 
-1º- Clone este repositório para sua máquina local:https://github.com/Brunosz2712/challenge-porto.git
-
-2º- Acesse a pasta do projeto:
+1º- Acesse a pasta do projeto:
 cd.\challenge-porto
 
-3º- Instale as dependências necessárias:
+2º- Instale as dependências necessárias:
 npm install
 
-4º- Pararodar no navegador:
+3º- - Pararodar no navegador:
 npm run dev -> em segudo clique na letra o
+
 
 ## Funcionalidades:
 

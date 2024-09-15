@@ -79,6 +79,7 @@ export default function Inicio() {
                                     <p>TURMA: 1TDSPG</p>
                                 </div>
                             </div>
+                            <a className={styles.gitHub} href="https://github.com/Brunosz2712/challenge-porto.git"target="_blank" rel="noopener noreferrer">GITHUB</a>
                         </div>
 
                         <div className={styles.redSoc}>

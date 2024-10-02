@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Cabecalho from "./Components/Cabecalho/Cabecalho";
-import Conteudo from "./Components/Conteudo/Conteudo";
 import Rodape from "./Components/Rodape/Rodape";
+import Home from "./page";
 
 export const metadata: Metadata = {
   title: "Help Car",
@@ -18,10 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body>
         <Cabecalho/>
-        <Conteudo/>
         {children}
         <Rodape/>
       </body>

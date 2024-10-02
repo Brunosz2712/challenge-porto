@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Menu() {
   return (
     <div>
-      <Link href="">Criar Conta</Link>
-      <Link href="/login">Entrar</Link>
+      <Link href="../Components/criar-conta">Criar Conta</Link>
+      <Link href="../Components/login">Entrar</Link>
     </div>
   );
 }

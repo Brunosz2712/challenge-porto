@@ -1,5 +1,7 @@
+"use client"; // Indica que o componente é Client-Side
+
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'; // Atualizado para usar o novo hook de navegação
 import Link from 'next/link';
 
 export default function Login() {
@@ -27,7 +29,7 @@ export default function Login() {
         if (email === emailSalvo && senha === senhaSalva) {
             setMensagem('Login realizado com sucesso! Redirecionando para a página Inicial!...');
             setTimeout(() => {
-                router.push('/home'); // Redirecionar para a página inicial ou outra página de destino
+                router.push('/'); // Redirecionar para a página inicial ou outra página de destino
             }, 2000);
         } else {
             setMensagem('Email ou senha incorretos. Tente novamente.');
@@ -38,7 +40,7 @@ export default function Login() {
         <main>
             <form onSubmit={fazerLogin}>
                 <section>
-                    <h1>LOGIN</h1>
+                    <h1>ENTRAR</h1>
 
                     <div>
                         <input
@@ -70,7 +72,6 @@ export default function Login() {
 
             {/* Exibindo mensagem de erro ou sucesso */}
             {mensagem && <p>{mensagem}</p>}
-
         </main>
     );
 }

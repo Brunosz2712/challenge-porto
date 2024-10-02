@@ -1,5 +1,7 @@
+"use client"; // Isso garante que o componente seja tratado como um Client Component
+
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'; // Atualizado para next/navigation
 import Link from 'next/link';
 
 export default function CriarConta() {
@@ -11,7 +13,7 @@ export default function CriarConta() {
     const [mensagem, setMensagem] = useState<string>('');
     const [erro, setErro] = useState<string>('');
 
-    const router = useRouter();
+    const router = useRouter(); // Hook de navegação
 
     // Validação simples de email
     const validarEmail = (email: string): boolean => {
@@ -51,7 +53,7 @@ export default function CriarConta() {
 
         // Redirecionar para a página de login após 2 segundos
         setTimeout(() => {
-            router.push('/login');
+            router.push('../Components/login');
         }, 2000);
     };
 

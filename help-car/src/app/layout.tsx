@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Cabecalho from "./Components/Cabecalho/Cabecalho";
 import Rodape from "./Components/Rodape/Rodape";
-import Home from "./page";
+
 
 export const metadata: Metadata = {
   title: "Help Car",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className="w-[100%] h-[100%]">
         <Cabecalho/>
         {children}
         <Rodape/>

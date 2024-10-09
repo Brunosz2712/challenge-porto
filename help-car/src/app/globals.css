@@ -2,3 +2,367 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply bg-black w-full h-full;
+}
+
+h1 {
+    @apply text-center text-[300%] text-[#00a1fc] font-sans;
+    font-family: 'Roboto', sans-serif; 
+}
+
+p {
+    @apply text-white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ConteudoPrincipal, .container {
+    @apply flex flex-wrap justify-center mt-[5%];
+}
+
+.portoSeguro, .helpCar {
+    @apply flex justify-center text-center w-[1085px] h-[181px] rounded-[10.16px] border border-[#d9d9d9] mb-[5%];
+}
+
+.paragPorto, .paragHelpCar {
+    @apply text-white text-center text-[100%] mt-[0.2%];
+}
+
+.portoSeguroH1, .helpCarH1 {
+    @apply flex justify-center text-[34.12px];
+}
+
+.containerPorto, .containerHelpCar {
+    @apply flex justify-between mt-[5%] mb-[5%] gap-[50px];
+}
+
+.imgPorto {
+    @apply rounded-[17.23px] w-[300px];
+}
+
+.integrantes {
+    @apply bg-gradient-to-b from-black to-[#4D0658] h-[438px] rounded-[10.16px] mt-[5%] mb-[5%];
+}
+
+.grupo {
+    @apply flex flex-col md:flex-row justify-around items-center mt-auto mr-auto;
+}
+
+.grupo div {
+    @apply p-4;
+}
+
+.grupo h3, .grupo p {
+    @apply text-[#d9d9d9] text-center;
+}
+
+.grupo h3 {
+    @apply text-[110%];
+}
+
+.integrantesH1 {
+    @apply flex text-center justify-center text-[34.12px];
+}
+
+.grupo img {
+    @apply w-[50%] h-auto rounded-[15px] mx-auto;
+}
+
+.rede-soc {
+    @apply flex justify-center flex-col rounded-[6.03px];
+}
+
+.acompanhe {
+    @apply mt-[100px] text-[15px] text-center font-sans text-white;
+}
+
+.imgPorto2, img {
+    @apply w-[14%] mr-[12%] mb-0;
+}
+
+.gitHub {
+    @apply text-white no-underline text-center mt-[9.2%];
+}
+
+header {
+    @apply flex justify-between items-center p-[10px];
+}
+
+.cabecalho {
+    @apply w-[280px];
+}
+
+.link, .botaoCadastroLogin {
+    @apply flex ml-auto mt-auto;
+}
+
+.link, .btnCriarConta, .btnLogin {
+    @apply bg-[#00a1fc] text-white w-[120px] h-[25px] no-underline font-sans border border-[#d9d9d9] mr-3 rounded-[20px] text-center flex items-center justify-center;
+}
+
+a:hover {
+    @apply bg-black text-[#00a1fc] rounded-[20px];
+}
+
+.fRodape {
+    @apply flex justify-center;
+}
+
+.apps {
+    @apply flex justify-around p-[10px];
+}
+
+.apps img {
+    @apply w-[34px] h-[34px];
+}
+
+form {
+    @apply flex flex-col items-center;
+}
+
+.mensagem {
+    @apply text-red-500 font-sans text-center mt-4 text-sm;
+}
+
+.nomeCompleto, .email, .senha, .confirmarSenha {
+    @apply flex mx-auto bg-[#d9d9d9] text-black rounded-[55px] p-2 w-[400px] box-border mb-5;
+}
+
+.btnConfirmar, .btnVoltar {
+    @apply bg-[#00a1fc] text-white w-[85px] h-[20px] no-underline font-sans border border-[#d9d9d9] rounded-[20px] flex items-center justify-center my-5 mx-auto;
+}
+
+.btnConfirmar:hover, .btnVoltar:hover {
+    @apply bg-black text-[#00a1fc];
+}
+
+@media (max-width: 1024px) {
+    .portoSeguro,
+    .helpCar {
+        @apply w-[90%];
+    }
+
+    .containerPorto,
+    .containerHelpCar {
+        @apply flex justify-around gap-5;
+    }
+
+    .imgPorto {
+        @apply w-52;
+    }
+
+    h1 {
+        @apply text-[300%];
+    }
+
+    .paragPorto,
+    .paragHelpCar {
+        @apply text-[90%];
+    }
+
+    .grupo img {
+        @apply w-[130px] h-[170px];
+    }
+}
+
+@media (max-width: 768px) {
+    .portoSeguro {
+        @apply w-full h-auto;
+    }
+
+    .helpCar {
+        @apply w-full h-auto;
+    }
+
+    .containerPorto {
+        @apply flex mt-auto justify-between gap-2 flex-nowrap overflow-x-auto;
+    }
+
+    .containerHelpCar {
+        @apply flex justify-between gap-2 flex-nowrap overflow-x-auto;
+    }
+
+    .imgPorto {
+        @apply w-[250px];
+    }
+
+    .integrantes {
+        @apply h-auto p-5; 
+    }
+
+    .grupo {
+        @apply justify-between;
+    }
+
+    .grupo img {
+        @apply w-[100px] h-[130px];
+    }
+
+    .acompanhe {
+        @apply mt-[50px] text-[12px];
+    }
+
+    .imgPorto2,
+    img {
+        @apply w-1/2 mb-2.5; 
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        @apply items-start p-4; 
+    }
+
+    .cabecalho {
+        @apply w-[200px];
+    }
+
+    .btnCriarConta,
+    .btnLogin {
+        @apply w-[100px] h-[30px] mr-[2%];
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        @apply items-center p-5; 
+    }
+
+    .cabecalho {
+        @apply mr-[88%] w-[150px] mb-[10px];
+    }
+
+    .botaoCadastroLogin {
+        @apply w-full ml-[-32%] justify-center;
+    }
+
+    .btnCriarConta,
+    .btnLogin {
+        @apply w-[90px] h-[20px] mr-0 mb-[10px];
+    }
+
+    a:hover {
+        @apply bg-[#00a1fc] text-white;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nomeCompleto,
+    .email,
+    .senha,
+    .confirmarSenha {
+        @apply w-[350px];
+    }
+
+    .btnConfirmar {
+        @apply w-[75px] h-[25px];
+    }
+
+    .btnVoltar {
+        @apply w-[75px] h-[22px];
+    }
+
+    .cabecalho {
+        @apply mr-[80%] w-[180px];
+    }
+
+    .fCriarConta {
+        @apply w-[180px];
+    }
+}
+
+@media (max-width: 480px) {
+    .nomeCompleto,
+    .email,
+    .senha,
+    .confirmarSenha {
+        @apply w-[350px];
+    }
+
+    .btnConfirmar {
+        @apply w-[75px] h-[25px];
+    }
+
+    .btnVoltar {
+        @apply w-[75px] h-[22px];
+    }
+
+    .cabecalho {
+        @apply mr-[80%] w-[180px];
+    }
+
+    .fCriarConta {
+        @apply w-[180px];
+    }
+}
+
+@media (max-width: 768px) {
+    .nomeCompleto, .email, .senha, .confirmarSenha {
+        width: 300px; 
+    }
+ 
+    .btnConfirmar, .btnVoltar {
+        width: 70px;  
+        height: 22px; 
+    }
+   
+    .fRodape {
+     width: 280px;
+     margin: auto;
+     margin-top: 150px;  
+    }
+ 
+    .cabecalho{
+     margin-right: 80%;
+      width: 180px;
+    }
+ 
+ }
+
+ @media (max-width: 480px) {
+    .nomeCompleto,
+    .email,
+    .senha,
+    .confirmarSenha {
+        @apply w-[250px];
+    }
+
+    .btnConfirmar,
+    .btnVoltar {
+        @apply w-[90px] h-[20px];
+    }
+
+    .cabecalho {
+        @apply mr-[80%] w-[180px];
+    }
+
+    .fRodape {
+        @apply w-[180px];
+    }
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        @apply w-[240px];
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        @apply w-[200px];
+    }
+
+    header {
+        @apply flex-col items-center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        @apply w-[160px];
+    }
+
+    header {
+        @apply flex-col items-center;
+    }
+}

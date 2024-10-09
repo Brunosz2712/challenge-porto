@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Atualizado para usar o novo hook de navegação
 import Link from 'next/link';
+import "../globals.css"; // Se estiver uma pasta acima
 
 export default function Login() {
     // Estados para armazenar o email, senha e a mensagem de feedback
@@ -39,13 +40,14 @@ export default function Login() {
     return (
         <main>
             <form onSubmit={fazerLogin}>
-                <section>
-                    <h1>ENTRAR</h1>
+                <section className="colocarDados">
+                    <h1 className="login">ENTRAR</h1>
 
                     <div>
                         <input
                             type="email"
                             placeholder="Email"
+                            className="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)} // Atualiza o estado de email
                         />
@@ -55,23 +57,24 @@ export default function Login() {
                         <input
                             type="password"
                             placeholder="Senha"
+                            className="senha"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)} // Atualiza o estado de senha
                         />
                     </div>
 
                     <div>
-                        <button type="submit">Confirmar</button>
+                        <button className="btnConfirmar" type="submit">Confirmar</button>
                     </div>
 
                     <div>
-                        <Link href="/">Voltar</Link>
+                        <Link className="btnVoltar"  href="/">Voltar</Link>
                     </div>
                 </section>
             </form>
 
             {/* Exibindo mensagem de erro ou sucesso */}
-            {mensagem && <p>{mensagem}</p>}
+            {mensagem && <p  className="mensagem" >{mensagem}</p>}
         </main>
     );
 }

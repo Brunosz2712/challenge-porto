@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import PortoSeguroRodape from '../public/porto-rodape.png';
+
 
 export default function Rodape(){
     return(
-        <div className='flex justify-center'>
+        <div className="fRodape">
     <footer>
-        <Image src={PortoSeguroRodape} alt="Porto Seguro rodapé" width={220} height={100} />
+    <Image className="cabecalho" src="/img/porto-rodape.png" alt="Porto Seguro cabeçalho" width={1080} height={720}/>
     </footer>
 </div>
 

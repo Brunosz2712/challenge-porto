@@ -1,13 +1,11 @@
 import Image from 'next/image';
-import PortoSeguro from '../public/porto-cabecalho.png';
 import Menu from '../Menu/Menu';
-
 
 export default function Cabecalho() {
   return (
-    <div>
+    <div className="CabecalhoPrincipal">
       <header>
-        <Image src={PortoSeguro} alt="Porto Seguro cabeçalho"/>
+      <Image className="cabecalho" src="/img/porto-cabecalho.png" alt="Porto Seguro cabeçalho" width={1080} height={720}/>
         <Menu/>
       </header>
     </div>

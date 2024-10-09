@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Atualizado para next/navigation
 import Link from 'next/link';
+import "../globals.css"; // Se estiver uma pasta acima
+
 
 export default function CriarConta() {
     // Estados para os campos de input
@@ -59,14 +61,15 @@ export default function CriarConta() {
 
     return (
         <main>
-            <section>
-                <h1>CRIAR CONTA</h1>
+            <section className="colocarDados">
+                <h1 className="criarConta">CRIAR CONTA</h1>
 
                 <form onSubmit={criarConta}>
                     <div>
                         <input
                             type="text"
                             placeholder="Nome Completo"
+                            className="nomeCompleto"
                             value={nomeCompleto}
                             onChange={(e) => setNomeCompleto(e.target.value)}
                         />
@@ -76,6 +79,7 @@ export default function CriarConta() {
                         <input
                             type="email"
                             placeholder="Email"
+                            className="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -85,6 +89,7 @@ export default function CriarConta() {
                         <input
                             type="password"
                             placeholder="Senha"
+                            className="senha"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
@@ -94,13 +99,14 @@ export default function CriarConta() {
                         <input
                             type="password"
                             placeholder="Confirmar Senha"
+                            className="confirmarSenha"
                             value={confirmarSenha}
                             onChange={(e) => setConfirmarSenha(e.target.value)}
                         />
                     </div>
 
                     <div>
-                        <button type="submit">Confirmar</button>
+                        <button type="submit" className="btnConfirmar">Confirmar</button>
                     </div>
                 </form>
 
@@ -120,7 +126,7 @@ export default function CriarConta() {
             </section>
 
             <div>
-                <Link href="/">Voltar</Link>
+                <Link className="btnVoltar" href="/">Voltar</Link>
             </div>
         </main>
     );

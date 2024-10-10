@@ -129,7 +129,7 @@ form {
 }
 
 .btnConfirmar, .btnVoltar {
-    @apply bg-[#00a1fc] text-white w-[85px] h-[20px] no-underline font-sans border border-[#d9d9d9] rounded-[20px] flex items-center justify-center my-5 mx-auto;
+    @apply bg-[#00a1fc] text-white w-[85px] h-[20px] no-underline font-sans border border-[#d9d9d9] rounded-[20px] flex items-center justify-center my-5 mx-auto mb-10;
 }
 
 .btnConfirmar:hover, .btnVoltar:hover {

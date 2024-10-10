@@ -104,13 +104,7 @@ export default function CriarConta() {
                             onChange={(e) => setConfirmarSenha(e.target.value)}
                         />
                     </div>
-
-                    <div>
-                        <button type="submit" className="btnConfirmar">Confirmar</button>
-                    </div>
-                </form>
-
-                {/* Mensagem de erro */}
+                             {/* Mensagem de erro */}
                 {erro && (
                     <div aria-live="polite" style={{ color: 'red' }}>
                         {erro}
@@ -123,6 +117,11 @@ export default function CriarConta() {
                         {mensagem}
                     </div>
                 )}
+                
+                    <div>
+                        <button type="submit" className="btnConfirmar">Confirmar</button>
+                    </div>
+                </form>
             </section>
 
             <div>

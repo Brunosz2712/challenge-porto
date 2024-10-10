@@ -39,8 +39,8 @@ export default function Login() {
 
     return (
         <main>
-            <form onSubmit={fazerLogin}>
-                <section className="colocarDados">
+            <section className="colocarDados">
+                <form onSubmit={fazerLogin}>
                     <h1 className="login">ENTRAR</h1>
 
                     <div>
@@ -62,7 +62,8 @@ export default function Login() {
                             onChange={(e) => setSenha(e.target.value)} // Atualiza o estado de senha
                         />
                     </div>
-
+                        {/* Exibindo mensagem de erro ou sucesso */}
+                        {mensagem && <p  className="mensagem" >{mensagem}</p>}
                     <div>
                         <button className="btnConfirmar" type="submit">Confirmar</button>
                     </div>
@@ -70,11 +71,9 @@ export default function Login() {
                     <div>
                         <Link className="btnVoltar"  href="/">Voltar</Link>
                     </div>
-                </section>
-            </form>
+                </form>
+            </section>
 
-            {/* Exibindo mensagem de erro ou sucesso */}
-            {mensagem && <p  className="mensagem" >{mensagem}</p>}
         </main>
     );
 }

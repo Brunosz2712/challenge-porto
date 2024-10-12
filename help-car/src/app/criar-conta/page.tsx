@@ -55,7 +55,7 @@ export default function CriarConta() {
 
         // Redirecionar para a página de login após 2 segundos
         setTimeout(() => {
-            router.push('../Components/login');
+            router.push('../login');
         }, 2000);
     };
 

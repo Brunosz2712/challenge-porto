@@ -136,6 +136,7 @@ form {
     @apply bg-black text-[#00a1fc];
 }
 
+
 @media (max-width: 1024px) {
     .portoSeguro,
     .helpCar {

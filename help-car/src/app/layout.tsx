@@ -12,11 +12,8 @@ export const viewport = {
   colorScheme:'dark'
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+  
   return (
     <html lang="pt-br">
       <body className="w-[100%] h-[100%]">

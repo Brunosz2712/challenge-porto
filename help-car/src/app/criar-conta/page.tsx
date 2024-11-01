@@ -1,13 +1,11 @@
-"use client"; // Isso garante que o componente seja tratado como um Client Component
+"use client";
 
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Atualizado para next/navigation
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import "../globals.css"; // Se estiver uma pasta acima
-
+import "../globals.css";
 
 export default function CriarConta() {
-    // Estados para os campos de input
     const [nomeCompleto, setNomeCompleto] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [senha, setSenha] = useState<string>('');
@@ -15,19 +13,16 @@ export default function CriarConta() {
     const [mensagem, setMensagem] = useState<string>('');
     const [erro, setErro] = useState<string>('');
 
-    const router = useRouter(); // Hook de navegação
+    const router = useRouter();
 
-    // Validação simples de email
     const validarEmail = (email: string): boolean => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
     };
 
-    // Função para criar conta
     const criarConta = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        // Validando campos
         if (!nomeCompleto.trim() || !email.trim() || !senha.trim() || !confirmarSenha.trim()) {
             setErro('Preencha todos os campos!');
             return;
@@ -43,33 +38,28 @@ export default function CriarConta() {
             return;
         }
 
-        // Simulando salvar no "banco de dados" via localStorage
         window.localStorage.setItem('email', email);
         window.localStorage.setItem('senha', senha);
 
-        // Limpa erros
         setErro('');
-
-        // Exibindo mensagem de sucesso
         setMensagem('Conta Criada com Sucesso! Redirecionando para a página de login...');
 
-        // Redirecionar para a página de login após 2 segundos
         setTimeout(() => {
             router.push('../login');
         }, 2000);
     };
 
     return (
-        <main>
-            <section className="colocarDados">
-                <h1 className="criarConta">CRIAR CONTA</h1>
+        <main className="flex flex-col items-center justify-center min-h-screen bg-black p-8"> {/* Fundo preto */}
+            <section className="w-full max-w-lg bg-gray-800 rounded-lg p-10 shadow-lg">
+                <h1 className="text-center text-3xl font-bold text-blue-400 mb-8">CRIAR CONTA</h1>
 
-                <form onSubmit={criarConta}>
+                <form onSubmit={criarConta} className="space-y-6">
                     <div>
                         <input
                             type="text"
                             placeholder="Nome Completo"
-                            className="nomeCompleto"
+                            className="w-full p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             value={nomeCompleto}
                             onChange={(e) => setNomeCompleto(e.target.value)}
                         />
@@ -79,7 +69,7 @@ export default function CriarConta() {
                         <input
                             type="email"
                             placeholder="Email"
-                            className="email"
+                            className="w-full p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -89,7 +79,7 @@ export default function CriarConta() {
                         <input
                             type="password"
                             placeholder="Senha"
-                            className="senha"
+                            className="w-full p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
@@ -99,33 +89,36 @@ export default function CriarConta() {
                         <input
                             type="password"
                             placeholder="Confirmar Senha"
-                            className="confirmarSenha"
+                            className="w-full p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             value={confirmarSenha}
                             onChange={(e) => setConfirmarSenha(e.target.value)}
                         />
                     </div>
-                             {/* Mensagem de erro */}
-                {erro && (
-                    <div aria-live="polite" style={{ color: 'red' }}>
-                        {erro}
-                    </div>
-                )}
 
-                {/* Mensagem de sucesso */}
-                {mensagem && (
-                    <div aria-live="polite" style={{ color: 'green' }}>
-                        {mensagem}
-                    </div>
-                )}
-                
+                    {erro && (
+                        <div aria-live="polite" className="text-red-500 text-center mt-2">
+                            {erro}
+                        </div>
+                    )}
+
+                    {mensagem && (
+                        <div aria-live="polite" className="text-green-500 text-center mt-2">
+                            {mensagem}
+                        </div>
+                    )}
+
                     <div>
-                        <button type="submit" className="btnConfirmar">Confirmar</button>
+                        <button type="submit" className="w-full py-3 mt-6 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600">
+                            Confirmar
+                        </button>
                     </div>
                 </form>
             </section>
 
-            <div>
-                <Link className="btnVoltar" href="/">Voltar</Link>
+            <div className="mt-6">
+                <Link href="/" className="inline-block py-2 px-4 rounded-lg bg-gray-600 text-white hover:bg-gray-700">
+                    Voltar
+                </Link>
             </div>
         </main>
     );

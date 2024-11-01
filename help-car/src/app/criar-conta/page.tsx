@@ -6,6 +6,8 @@ import Link from 'next/link';
 import "../globals.css";
 
 export default function CriarConta() {
+
+    
     const [nomeCompleto, setNomeCompleto] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [senha, setSenha] = useState<string>('');

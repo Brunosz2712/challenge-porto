@@ -1,11 +1,23 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import "../globals.css";
 
 export default function CriarConta() {
+
+    useEffect(()=>{
+        const chamadaApiJava = async()=>{
+            const response = await fetch("localhost:8080")
+            const data = await response.json();
+        }
+
+        chamadaApiJava();
+
+    }, [])
+
+
     const [nomeCompleto, setNomeCompleto] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [senha, setSenha] = useState<string>('');
@@ -55,6 +67,19 @@ export default function CriarConta() {
                 <h1 className="text-center text-3xl font-bold text-blue-400 mb-8">CRIAR CONTA</h1>
 
                 <form onSubmit={criarConta} className="space-y-6">
+
+                <tbody> ***ESSE TALVES SERIA MELHOR COLOCAR UM POR UM CASO O JSON ESTEJA CORRETO***
+                        {cadastro.map(r =>(
+                            <tr key={r.codigo}>
+                                <td>{r.codigoCliente}</td>
+                                <td>{r.nomeCompleto}</td>
+                                <td>{r.email}</td>
+                                <td>{r.senha}</td>
+                                <td>{r.confirmarSenha}</td>
+                            </tr>
+                        ))}
+                    </tbody>***ATÉ AQUI***
+
                     <div>
                         <input
                             type="text"

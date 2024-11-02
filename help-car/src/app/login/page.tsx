@@ -66,15 +66,15 @@ export default function Login() {
                             Confirmar
                         </button>
                     </div>
-
-                    {/* Div para centralizar o botão Voltar */}
-                    <div className="flex justify-center">
-                        <Link href="/" className="inline-block py-2 px-4 mt-4 rounded-lg bg-gray-600 text-white hover:bg-gray-700 text-center">
-                            Voltar
-                        </Link>
-                    </div>
                 </form>
             </section>
+
+            {/* Div para centralizar o botão Voltar */}
+            <div className="mt-6">
+                <Link href="/" className="inline-block py-2 px-4 rounded-lg bg-gray-600 text-white hover:bg-gray-700 text-center">
+                    Voltar
+                </Link>
+            </div>
         </main>
     );
 }

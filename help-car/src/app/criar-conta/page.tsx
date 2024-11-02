@@ -6,8 +6,6 @@ import Link from 'next/link';
 import "../globals.css";
 
 export default function CriarConta() {
-
-    
     const [nomeCompleto, setNomeCompleto] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [senha, setSenha] = useState<string>('');
@@ -52,7 +50,7 @@ export default function CriarConta() {
     };
 
     return (
-        <main className="flex flex-col items-center justify-center min-h-screen bg-black p-8"> {/* Fundo preto */}
+        <main className="flex flex-col items-center justify-center min-h-screen bg-black p-8">
             <section className="w-full max-w-lg bg-gray-800 rounded-lg p-10 shadow-lg">
                 <h1 className="text-center text-3xl font-bold text-blue-400 mb-8">CRIAR CONTA</h1>
 
@@ -98,13 +96,13 @@ export default function CriarConta() {
                     </div>
 
                     {erro && (
-                        <div aria-live="polite" className="text-red-500 text-center mt-2">
+                        <div role="alert" className="text-red-500 text-center mt-2">
                             {erro}
                         </div>
                     )}
 
                     {mensagem && (
-                        <div aria-live="polite" className="text-green-500 text-center mt-2">
+                        <div role="alert" className="text-green-500 text-center mt-2">
                             {mensagem}
                         </div>
                     )}

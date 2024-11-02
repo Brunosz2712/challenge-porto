@@ -10,75 +10,59 @@ Este é um projeto web desenvolvido em **React** que apresenta informações sob
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Autores](#autores)
+- [Links de Vídeos](#links-de-vídeos)
 
+## Descrição
 
-## Descrição:
+O Help Car é um bot integrado ao site da Porto Seguro que auxilia os usuários a diagnosticar problemas em seus veículos, estimar custos de reparos e encontrar oficinas próximas. Além disso, o sistema inclui páginas para criar uma conta e fazer login para acessar informações personalizadas.
 
-O Help Car é um bot integrado ao site da Porto Seguro que auxilia os usuários a diagnosticar problemas em seus veículos, estimar custos de reparos, e encontrar oficinas próximas. Além disso, o sistema inclui páginas para criar uma conta e fazer login para acessar informações personalizadas.
-
-## Requisitos:
+## Requisitos
 
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
-Node.js (versão 12 ou superior)
-npm (ou yarn como alternativa)
-Um navegador web atualizado
+- Node.js (versão 12 ou superior)
+- npm (ou yarn como alternativa)
+- Um navegador web atualizado
 
-## Instalação:
+## Instalação
 
-1º- Acesse a pasta do projeto:
-cd.\challenge-porto
+1. Acesse a pasta do projeto:
+   ```bash
+   cd .\help-car
 
-2º- Instale as dependências necessárias:
-npm install
-
-3º- - Pararodar no navegador:
-npm run dev -> em segudo clique na letra o
-
-
-## Funcionalidades:
+## Funcionalidades
 
 Página Inicial: Exibe informações sobre a Porto Seguro e o serviço Help Car.
-
 Criação de Conta: Permite aos usuários criarem uma conta preenchendo um formulário com nome, e-mail e senha.
-
 Login: Os usuários podem fazer login com suas credenciais.
-
 Diagnóstico de Veículo: O bot Help Car fornece suporte para diagnósticos de veículos, estimando preços e indicando oficinas próximas.
-
 Redes Sociais: Acompanhe as novidades da Porto Seguro nas redes sociais.
-
-## Tecnologias Utilizadas:
-
+Tecnologias Utilizadas
 O projeto foi desenvolvido com as seguintes tecnologias:
 
 React: Biblioteca JavaScript para construção de interfaces de usuário.
-
 React Router: Para navegação entre as páginas do sistema.
-
 TypeScript: Superset do JavaScript que adiciona tipos estáticos.
-
 CSS Modules: Para estilização dos componentes de forma modular.
-
 LocalStorage: Para simulação de armazenamento de dados dos usuários (como e-mail e senha).
 
+## Autores
 
-## Autores:
-
-### Pedro Manzo Yokoo
+Pedro Manzo Yokoo
 RM: 556115
 Turma: 1TDSPI
 
-### Felipe Orikasa
+Felipe Orikasa
 RM: 557435
 Turma: 1TDSPG
 
-### Bruno da Silva Souza
+Bruno da Silva Souza
 RM: 94346
 Turma: 1TDSPG
 
-## Link do vídeo
+# Links de Vídeos
+
+## Help Car
 [Help Car](https://youtu.be/40zAI-Ptfuk)
 
-## Link do Figma
-[Figma](https://www.figma.com/design/HqeU2mdoU7giLhEPMLAC7j/HELP-CAR?node-id=0-1&node-type=canvas&t=rcKGYd4ZRg9DcCx0-0)
+[Help Car 2° Vídeo]()

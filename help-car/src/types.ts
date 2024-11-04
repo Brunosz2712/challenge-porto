@@ -1,5 +1,4 @@
-
-export interface Usuario {
+export type Cadastro = {
     nomeCompleto: string;
     email: string;
     senha: string;

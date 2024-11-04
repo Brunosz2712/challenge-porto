@@ -1,23 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import "../globals.css";
 
 export default function CriarConta() {
-
-    useEffect(()=>{
-        const chamadaApiJava = async()=>{
-            const response = await fetch("localhost:8080")
-            const data = await response.json();
-        }
-
-        chamadaApiJava();
-
-    }, [])
-
-
     const [nomeCompleto, setNomeCompleto] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [senha, setSenha] = useState<string>('');
@@ -32,7 +20,7 @@ export default function CriarConta() {
         return re.test(String(email).toLowerCase());
     };
 
-    const criarConta = (event: React.FormEvent<HTMLFormElement>) => {
+    const criarConta = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         if (!nomeCompleto.trim() || !email.trim() || !senha.trim() || !confirmarSenha.trim()) {
@@ -50,15 +38,37 @@ export default function CriarConta() {
             return;
         }
 
-        window.localStorage.setItem('email', email);
-        window.localStorage.setItem('senha', senha);
+        const dadosConta = {
+            nomeCompleto,
+            email,
+            senha,
+        };
 
-        setErro('');
-        setMensagem('Conta Criada com Sucesso! Redirecionando para a página de login...');
+        try {
+            const response = await fetch("http://localhost:8080/contaCliente", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dadosConta),
+            });
 
-        setTimeout(() => {
-            router.push('../login');
-        }, 2000);
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Erro ao criar conta');
+            }
+
+            setErro('');
+            setMensagem('Conta Criada com Sucesso! Redirecionando para a página de login...');
+
+            setTimeout(() => {
+                router.push('../login');
+            }, 2000);
+        } catch (error) {
+            // Usando uma verificação segura para o erro
+            const errorMessage = (error as Error).message || 'Ocorreu um erro inesperado';
+            setErro(errorMessage);
+        }
     };
 
     return (
@@ -67,19 +77,6 @@ export default function CriarConta() {
                 <h1 className="text-center text-3xl font-bold text-blue-400 mb-8">CRIAR CONTA</h1>
 
                 <form onSubmit={criarConta} className="space-y-6">
-
-                <tbody> ***ESSE TALVES SERIA MELHOR COLOCAR UM POR UM CASO O JSON ESTEJA CORRETO***
-                        {cadastro.map(r =>(
-                            <tr key={r.codigo}>
-                                <td>{r.codigoCliente}</td>
-                                <td>{r.nomeCompleto}</td>
-                                <td>{r.email}</td>
-                                <td>{r.senha}</td>
-                                <td>{r.confirmarSenha}</td>
-                            </tr>
-                        ))}
-                    </tbody>***ATÉ AQUI***
-
                     <div>
                         <input
                             type="text"

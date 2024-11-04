@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import pedro from '@/app/public/img/pedro.jpeg'
+import felipe from '@/app/public/img/felipe.jpeg'
+import bruno from '@/app/public/img/bruno.jpeg'
 
 export default function Integrantes() {
     return (
@@ -12,21 +15,21 @@ export default function Integrantes() {
 
                 <div className="grupo flex flex-col md:flex-row justify-around items-center gap-6">
                     <div className="pedro1 flex flex-col items-center">
-                        <Image className="pedro rounded-[15px] mb-2" src="/img/pedro.jpeg" alt="Pedro" width={143} height={191} />
+                        <Image className="pedro rounded-[15px] mb-2" src={pedro} alt="Pedro" width={143} height={191} />
                         <h3 className="text-[#d9d9d9] text-[110%] font-['Roboto']">NOME: Pedro Manzo Yokoo</h3>
                         <p className="text-[#d9d9d9] font-['Roboto']">RM: 556115</p>
                         <p className="text-[#d9d9d9] font-['Roboto']">TURMA: 1TDSPI</p>
                     </div>
 
                     <div className="felipe2 flex flex-col items-center">
-                        <Image className="felipe rounded-[15px] mb-2" src="/img/felipe.jpeg" alt="Felipe" width={143} height={191} />
+                        <Image className="felipe rounded-[15px] mb-2" src={felipe} alt="Felipe" width={143} height={191} />
                         <h3 className="text-[#d9d9d9] text-[110%] font-['Roboto']">NOME: Felipe Orikasa</h3>
                         <p className="text-[#d9d9d9] font-['Roboto']">RM: 557435</p>
                         <p className="text-[#d9d9d9] font-['Roboto']">TURMA: 1TDSPG</p>
                     </div>
 
                     <div className="bruno3 flex flex-col items-center">
-                        <Image className="bruno rounded-[15px] mb-2" src="/img/bruno.jpeg" alt="Bruno" width={143} height={191} />
+                        <Image className="bruno rounded-[15px] mb-2" src={bruno} alt="Bruno" width={143} height={191} />
                         <h3 className="text-[#d9d9d9] text-[110%] font-['Roboto']">NOME: Bruno da Silva Souza</h3>
                         <p className="text-[#d9d9d9] font-['Roboto']">RM: 94346</p>
                         <p className="text-[#d9d9d9] font-['Roboto']">TURMA: 1TDSPG</p>

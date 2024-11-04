@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import rodape from '@/app/public/img/porto-rodape.png'
 
 export default function Rodape() {
   return (
@@ -6,7 +7,7 @@ export default function Rodape() {
       <footer>
         <Image 
           className="cabecalho" 
-          src="/img/porto-rodape.png" 
+          src={rodape} 
           alt="Porto Seguro rodapé" 
           width={120}  // Largura da imagem do rodapé
           height={120}  // Altura da imagem do rodapé

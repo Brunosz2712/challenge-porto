@@ -2,6 +2,10 @@ import Image from 'next/image';
 import Integrantes from './Integrantes/Integrantes';
 import Site from './Site/Site';
 import './globals.css';
+import empresaPorto1 from '@/app/public/img/empresa-porto-1.jpeg'
+import empresaPorto2 from '@/app/public/img/empresa-porto-2.jpg'
+import concerto from '@/app/public/img/concerto-1.jpg'
+import avaliacao from '@/app/public/img/avaliacao.jpeg'
 
 export default function Home() {
     return (
@@ -19,8 +23,8 @@ export default function Home() {
 
                     {/* Imagens da Porto */}
                     <div className="flex justify-between gap-6 mb-10">
-                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src="/img/empresa-porto-1.jpeg" alt="Porto" width={300} height={400} />
-                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src="/img/empresa-porto-2.jpg" alt="Porto" width={300} height={400} />
+                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src={empresaPorto1} alt="Porto" width={300} height={400} />
+                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src={empresaPorto2} alt="Porto" width={300} height={400} />
                     </div>
 
                     {/* Seção Help Car */}
@@ -33,8 +37,8 @@ export default function Home() {
 
                     {/* Imagens do Help Car */}
                     <div className="flex justify-between gap-6 mb-10">
-                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src="/img/concerto-1.jpg" alt="Concerto-1" width={300} height={400} />
-                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src="/img/avaliacao.jpeg" alt="Avaliação" width={300} height={400} />
+                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src={concerto} alt="Concerto-1" width={300} height={400} />
+                        <Image className="rounded-lg w-full max-w-[300px] h-auto" src={avaliacao} alt="Avaliação" width={300} height={400} />
                     </div>
                 </div>
                 

@@ -65,4 +65,4 @@ Turma: 1TDSPG
 ## Help Car
 [Help Car](https://youtu.be/40zAI-Ptfuk)
 
-[Help Car 2° Vídeo]()
+[Help Car 2° Vídeo](https://youtu.be/BELQHNN-_W8)
